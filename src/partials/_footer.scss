@@ -1,0 +1,50 @@
+@import "./variables.scss";
+
+footer {
+  margin: 40px 0 0 0;
+  padding: 40px 0;
+  border-top: 1px solid $primaryColor;
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    h2 {
+      font-family: $secondaryFont;
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    .icons-ul {
+      display: flex;
+      li {
+        svg {
+          height: 60px;
+          width: 60px;
+        }
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.connect-nav {
+  h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+  .connect-ul {
+    li {
+      margin-bottom: 5px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: color 0.3s;
+      &:hover,
+      &:focus {
+        color: $tertiaryColor;
+      }
+    }
+  }
+}

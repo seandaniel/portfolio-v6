@@ -1,0 +1,69 @@
+@use "./variables" as *;
+
+header.title-header {
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+  background: $secondaryColor;
+  .title-contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    h1,
+    h2,
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    h2 {
+      margin-top: 5px;
+      &::after {
+        content: "|";
+        animation: blink 1s infinite;
+      }
+    }
+    a {
+      margin-top: 5px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.header-nav {
+  padding: 120px 0 20px 0;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    li {
+      display: flex;
+      justify-content: center;
+      a {
+        display: block;
+        width: 100%;
+        letter-spacing: 0.5px;
+        color: $tertiaryColor;
+        font-weight: 600;
+        transition: color 0.3s;
+        &:hover {
+          color: $quarternaryColor;
+        }
+      }
+      .active {
+        color: $primaryColor;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
