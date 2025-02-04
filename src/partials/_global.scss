@@ -1,5 +1,11 @@
 @use "./variables" as *;
 
+::selection {
+  color: $tertiaryColor;
+  background: $secondaryColor;
+  transition: 0.35s;
+}
+
 body {
   font-family: $primaryFont;
   color: $primaryColor;
@@ -46,7 +52,7 @@ button {
 }
 
 .wrapper {
-  max-width: 1900px;
+  max-width: 1500px;
   width: 96%;
   margin: 0 auto;
 }

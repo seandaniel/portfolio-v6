@@ -5,6 +5,7 @@ header.title-header {
   top: 0;
   padding: 20px 0;
   background: $secondaryColor;
+  z-index: 10;
   .title-contact-container {
     display: flex;
     justify-content: space-between;

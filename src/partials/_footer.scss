@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@use "./variables" as *;
 
 footer {
   margin: 40px 0 0 0;
@@ -13,18 +13,6 @@ footer {
       font-size: 32px;
       font-weight: 400;
       margin-bottom: 20px;
-    }
-    .icons-ul {
-      display: flex;
-      li {
-        svg {
-          height: 60px;
-          width: 60px;
-        }
-        &:first-child {
-          margin-right: 10px;
-        }
-      }
     }
   }
 }

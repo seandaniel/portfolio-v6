@@ -1,28 +1,27 @@
-import { Project } from "./Project";
+import { ProjectsList } from "./ProjectsList.tsx";
 
-export const Personal = () => {
-  return (
-    <div className="wrapper">
-      <div className="projects-container">
-        <Project
-          link={""}
-          background={""}
-          title="Verbeek's Landscaping"
-          logo={""}
-        />
-        <Project
-          link={""}
-          background={""}
-          title="Verbeek's Landscaping"
-          logo={""}
-        />
-        <Project
-          link={""}
-          background={""}
-          title="Verbeek's Landscaping"
-          logo={""}
-        />
-      </div>
-    </div>
-  );
-};
+const personalProjects = [
+  {
+    link: "https://www.goodthingsgolf.com",
+    background: "",
+    title: "Good Things Golf",
+    logo: "",
+    projectType: "website-project",
+  },
+  {
+    link: "https://receiptify-v2.netlify.app/",
+    background: "",
+    title: "Receiptify",
+    logo: "",
+    projectType: "website-project",
+  },
+  {
+    link: "https://webapp-notes.netlify.app/",
+    background: "",
+    title: "Notes",
+    logo: "",
+    projectType: "website-project",
+  },
+];
+
+export const Personal = () => <ProjectsList projects={personalProjects} />;

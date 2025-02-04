@@ -1,28 +1,13 @@
-import { Project } from "./Project";
+import { ProjectsList } from "./ProjectsList";
 
-export const Clients = () => {
-  return (
-    <div className="wrapper">
-      <div className="projects-container">
-        <Project
-          link={""}
-          background={""}
-          title="Verbeek's Landscaping"
-          logo={""}
-        />
-        <Project
-          link={""}
-          background={""}
-          title="Verbeek's Landscaping"
-          logo={""}
-        />
-        <Project
-          link={""}
-          background={""}
-          title="Verbeek's Landscaping"
-          logo={""}
-        />
-      </div>
-    </div>
-  );
-};
+const clientProjects = [
+  {
+    link: "https://www.verbeekslandscaping.com",
+    background: "",
+    title: "Verbeek's Landscaping",
+    logo: "",
+    projectType: "website-project",
+  },
+];
+
+export const Clients = () => <ProjectsList projects={clientProjects} />;

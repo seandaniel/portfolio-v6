@@ -1,17 +1,18 @@
 interface ProjectProps {
-  background: string;
   logo: string;
   link: string;
   title: string;
+  description: string;
 }
 
-export const Project = ({ background, logo, link, title }: ProjectProps) => {
+export const Project = ({ logo, link, title, description }: ProjectProps) => {
   return (
-    <section className="project-container">
-      <a href={link} style={{ backgroundImage: `url(${background})` }}>
-        <img src={logo} alt={title} />
+    <div className="project-container">
+      <a target="_blank" href={link}>
+        <img className="logo-img" src={logo} alt={title} />
       </a>
       <h4>{title}</h4>
-    </section>
+      <h5>{description}</h5>
+    </div>
   );
 };
