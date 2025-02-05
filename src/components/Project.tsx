@@ -1,18 +1,27 @@
 interface ProjectProps {
-  logo: string;
+  icon: string;
   link: string;
   title: string;
   description: string;
+  className: string;
 }
 
-export const Project = ({ logo, link, title, description }: ProjectProps) => {
+export const Project = ({
+  icon,
+  link,
+  title,
+  description,
+  className,
+}: ProjectProps) => {
   return (
-    <div className="project-container">
+    <li className={`${className}`}>
       <a target="_blank" href={link}>
-        <img className="logo-img" src={logo} alt={title} />
+        <img className="icon-img" src={icon} alt={title} />
+        <div className="title-description-container">
+          <h4>{title}</h4>
+          <h5>{description}</h5>
+        </div>
       </a>
-      <h4>{title}</h4>
-      <h5>{description}</h5>
-    </div>
+    </li>
   );
 };

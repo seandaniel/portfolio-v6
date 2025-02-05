@@ -1,34 +1,23 @@
 import { Project } from "./Project";
+import projectList from "./projectList";
 
-interface ProjectType {
-  link: string;
-  background: string;
-  title: string;
-  logo: string;
-  projectType: string;
-}
-
-interface ProjectsListProps {
-  projects: ProjectType[];
-}
-
-export const ProjectsList = ({ projects }: ProjectsListProps) => {
+export const ProjectsList = () => {
   return (
     <div className="wrapper">
-      <div className="projects-container">
-        {projects.map(
-          ({ link, background, title, logo, projectType }, index) => (
+      <ul className="projects-container">
+        {projectList.map(
+          ({ icon, link, title, description, className }, index) => (
             <Project
               key={index}
+              icon={icon}
               link={link}
-              background={background}
               title={title}
-              logo={logo}
-              projectType={projectType}
+              description={description}
+              className={className}
             />
           )
         )}
-      </div>
+      </ul>
     </div>
   );
 };

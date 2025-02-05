@@ -1,9 +1,8 @@
 @use "./variables" as *;
 
 header.title-header {
-  position: sticky;
-  top: 0;
   padding: 20px 0;
+  margin-bottom: 60px;
   background: $secondaryColor;
   z-index: 10;
   .title-contact-container {
@@ -36,35 +35,5 @@ header.title-header {
 @keyframes blink {
   50% {
     opacity: 0;
-  }
-}
-
-.header-nav {
-  padding: 120px 0 20px 0;
-  ul {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    li {
-      display: flex;
-      justify-content: center;
-      a {
-        display: block;
-        width: 100%;
-        letter-spacing: 0.5px;
-        color: $tertiaryColor;
-        font-weight: 600;
-        transition: color 0.3s;
-        &:hover {
-          color: $quarternaryColor;
-        }
-      }
-      .active {
-        color: $primaryColor;
-        &:hover {
-          color: $primaryColor;
-        }
-      }
-    }
   }
 }

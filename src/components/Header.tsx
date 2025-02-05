@@ -1,24 +1,21 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [cursorVisible, setCursorVisible] = useState(true);
-  const [active, setActive] = useState("All");
 
-  const phrases = ["Web Developer", "Snowboarder", "Golfer", "Open for work"];
+  const phrases = [
+    "Web Developer",
+    "Snowboarder",
+    "Golfer",
+    "Great w/ the aux cord",
+    "Open for work",
+  ];
   const typingSpeed = 200;
   const backspaceSpeed = 100;
   const pauseTime = 1000;
-
-  const pagesArray = [
-    { url: "", pageName: "All" },
-    { url: "clients", pageName: "Clients" },
-    { url: "personal", pageName: "Personal" },
-    { url: "media", pageName: "Media" },
-  ];
 
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout>;
@@ -51,10 +48,6 @@ export const Header = () => {
     return () => clearTimeout(timer);
   }, [text, isDeleting, index, phrases]);
 
-  const toggleColor = (pageName: string) => {
-    setActive(pageName);
-  };
-
   return (
     <>
       <header className="title-header">
@@ -66,25 +59,6 @@ export const Header = () => {
             </div>
             <a href="mailto:degroot.sd@gmail.com">Contact</a>
           </div>
-        </div>
-      </header>
-      <header>
-        <div className="wrapper">
-          <nav className="header-nav">
-            <ul>
-              {pagesArray.map(({ url, pageName }, index) => (
-                <li key={index}>
-                  <Link
-                    onClick={() => toggleColor(pageName)}
-                    to={`/${url}`}
-                    className={active === pageName ? "active" : ""}
-                  >
-                    {pageName}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
         </div>
       </header>
     </>
