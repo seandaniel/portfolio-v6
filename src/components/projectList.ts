@@ -39,7 +39,7 @@ const projectList = [
     icon: sunIcon,
     link: "https://open.spotify.com/playlist/5YgbIoNbuNGPTyThjHZPSY?si=663313e0302948f5",
     title: "Zen",
-    description: "A lofi playlist for those looking for flow state",
+    description: "A lofi playlist for flow state",
     className: "zen",
   },
   {
