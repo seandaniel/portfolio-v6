@@ -1,6 +1,6 @@
 @use "./variables" as *;
 
-.projects-container {
+.projects-container .fade-in {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto);
