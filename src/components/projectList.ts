@@ -12,7 +12,7 @@ const projectList = [
     icon: growthIcon,
     link: "https://www.verbeekslandscaping.com",
     title: "Verbeek's Farm & Garden Centre",
-    description: "An e-commerce store",
+    description: "An e-commerce shop",
     className: "verbeeks",
   },
   {
@@ -33,7 +33,7 @@ const projectList = [
     icon: notesIcon,
     link: "https://webapp-notes.netlify.app/",
     title: "Notes",
-    description: "Jot down lists, to-dos, lyrics, code",
+    description: "Jot down lists, to-dos, lyrics, code, birthdays",
     className: "notes",
   },
   {
@@ -54,7 +54,7 @@ const projectList = [
     icon: fuelIcon,
     link: "https://open.spotify.com/playlist/4uH2mfivSNIZeHXrndnzjx?si=d3d8f474ed874360",
     title: "Fuel",
-    description: "A playlist for those about to crush it",
+    description: "A playlist to get hyped up",
     className: "fuel",
   },
   {
