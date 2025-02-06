@@ -34,7 +34,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:degroot.sd@gmail.com">E-mail</a>
+                <a href="mailto:degroot.sd@gmail.com">Email</a>
               </li>
             </ul>
           </nav>
