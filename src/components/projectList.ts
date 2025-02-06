@@ -2,7 +2,6 @@ import growthIcon from "../assets/growth.svg";
 import musicSceneIcon from "../assets/music-scene.svg";
 import golfIcon from "../assets/golf.svg";
 import notesIcon from "../assets/notes.svg";
-import statsPie from "../assets/stats-pie.svg";
 import sunIcon from "../assets/sun.svg";
 import fuelIcon from "../assets/rocket.svg";
 import mountainIcon from "../assets/mountain.svg";
@@ -35,13 +34,6 @@ const projectList = [
     title: "Notes",
     description: "Jot down lists, to-dos, lyrics, code, birthdays",
     className: "notes",
-  },
-  {
-    icon: statsPie,
-    link: "https://seandaniel.github.io/git-check/",
-    title: "Git Check",
-    description: "For the coders",
-    className: "gitcheck",
   },
   {
     icon: sunIcon,
