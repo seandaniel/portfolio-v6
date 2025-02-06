@@ -33,6 +33,9 @@ export const Footer = () => {
                   GitHub
                 </a>
               </li>
+              <li>
+                <a href="mailto:degroot.sd@gmail.com">E-mail</a>
+              </li>
             </ul>
           </nav>
         </div>
