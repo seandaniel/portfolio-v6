@@ -7,9 +7,9 @@ export const Footer = () => {
             <h2>
               Sean de Groot is a web developer who builds things on the internet
               and
-              <br></br>
-              enables brands to showcase their products and services around the
-              world. <br></br>Interested in working together? Get in touch.
+              <br></br> enables brands to showcase their products and services
+              around the world. <br></br>Interested in working together? Get in
+              touch.
             </h2>
           </div>
           <nav className="connect-nav">
