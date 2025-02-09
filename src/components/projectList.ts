@@ -23,9 +23,9 @@ const projectList = [
   },
   {
     icon: golfIcon,
-    link: "https://www.goodthingsgolf.com",
+    link: "https://goodthingsgolf.netlify.app/",
     title: "Good Things Golf",
-    description: "A masonry photo gallery",
+    description: "A masonry golf photo gallery",
     className: "goodthingsgolf",
   },
   {
