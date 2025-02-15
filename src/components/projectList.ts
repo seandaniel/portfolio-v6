@@ -22,18 +22,18 @@ const projectList = [
     className: "receiptify",
   },
   {
-    icon: golfIcon,
-    link: "https://goodthingsgolf.netlify.app/",
-    title: "Good Things Golf",
-    description: "A masonry golf photo gallery",
-    className: "goodthingsgolf",
-  },
-  {
     icon: notesIcon,
     link: "https://webapp-notes.netlify.app/",
     title: "Notes",
     description: "Jot down lists, to-dos, lyrics, code, birthdays",
     className: "notes",
+  },
+  {
+    icon: golfIcon,
+    link: "https://goodthingsgolf.netlify.app/",
+    title: "Good Things Golf",
+    description: "A masonry golf photo gallery",
+    className: "goodthingsgolf",
   },
   {
     icon: sunIcon,
