@@ -11,7 +11,7 @@ const projectList = [
     icon: growthIcon,
     link: "https://www.verbeekslandscaping.com",
     title: "Verbeek's Farm & Garden Centre",
-    description: "An e-commerce shop",
+    description: "An e-commerce shop powered by Shopify",
     className: "verbeeks",
   },
   {
