@@ -4,7 +4,6 @@ export const Header = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [cursorVisible, setCursorVisible] = useState(true);
 
   const phrases = [
     "Web Developer",
@@ -34,12 +33,6 @@ export const Header = () => {
       }
     }
 
-    if (text === phrases[index]) {
-      setCursorVisible(true);
-    } else {
-      setCursorVisible(false);
-    }
-
     if (text === "" && isDeleting) {
       setIsDeleting(false);
       setIndex((prevIndex) => (prevIndex + 1) % phrases.length);
@@ -55,7 +48,7 @@ export const Header = () => {
           <div className="title-contact-container">
             <div className="name-title-container">
               <h1>Sean de Groot</h1>
-              <h2 className={cursorVisible ? "cursor-visible" : ""}>{text}</h2>
+              <h2>{text}</h2>
             </div>
             <a href="mailto:degroot.sd@gmail.com">Contact</a>
           </div>

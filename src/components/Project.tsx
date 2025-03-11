@@ -3,6 +3,7 @@ interface ProjectProps {
   link: string;
   title: string;
   description: string;
+  type: string;
   className: string;
 }
 
@@ -11,6 +12,7 @@ export const Project = ({
   link,
   title,
   description,
+  type,
   className,
 }: ProjectProps) => {
   return (
@@ -20,6 +22,7 @@ export const Project = ({
         <div className="title-description-container">
           <h4>{title}</h4>
           <h5>{description}</h5>
+          <h6>{type}</h6>
         </div>
       </a>
     </li>

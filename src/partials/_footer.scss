@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 footer {
-  margin: 100px 0 0 0;
+  margin-top: calc(60px + 2%);
   padding: 40px 0;
   border-top: 1px solid $primaryColor;
   .footer-container {
@@ -28,8 +28,11 @@ footer {
       flex-direction: column;
     }
   }
-  @media (max-width: 600px) {
-    margin: 58% 0 0 0;
+  @media (max-width: 1350px) {
+    margin-top: calc(60px + 6%);
+  }
+  @media (max-width: 750px) {
+    margin-top: 52%;
   }
 }
 

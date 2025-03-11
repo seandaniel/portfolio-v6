@@ -7,15 +7,11 @@
   gap: 2% 1%;
   width: 100%;
   height: 100%;
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1%; // Adjust horizontal gap to maintain consistency
-  }
-  @media (max-width: 900px) {
+  @media (max-width: 1350px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1% 2%; // Since fewer columns, increase horizontal gap slightly
   }
-  @media (max-width: 600px) {
+  @media (max-width: 750px) {
     grid-template-columns: repeat(1, 1fr);
     gap: 1% 0%; // No horizontal gap needed for a single column
   }
@@ -56,6 +52,16 @@
       }
       h5 {
         font-family: $secondaryFont;
+        margin-bottom: 5px;
+      }
+      h6 {
+        background: $primaryColor;
+        padding: 5px;
+        color: $secondaryColor;
+        text-transform: uppercase;
+        display: inline-block;
+        border-radius: 2px;
+        font-size: 12px;
       }
     }
   }

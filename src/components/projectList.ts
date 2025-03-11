@@ -12,6 +12,7 @@ const projectList = [
     link: "https://www.verbeekslandscaping.com",
     title: "Verbeek's Farm & Garden Centre",
     description: "An e-commerce shop powered by Shopify",
+    type: "Shop",
     className: "verbeeks",
   },
   {
@@ -19,6 +20,7 @@ const projectList = [
     link: "https://receiptify-v2.netlify.app/",
     title: "Receiptify",
     description: "Like Spotify wrapped, but with receipts",
+    type: "App",
     className: "receiptify",
   },
   {
@@ -26,6 +28,7 @@ const projectList = [
     link: "https://webapp-notes.netlify.app/",
     title: "Notes",
     description: "Jot down lists, to-dos, lyrics, code, birthdays",
+    type: "App",
     className: "notes",
   },
   {
@@ -33,6 +36,7 @@ const projectList = [
     link: "https://goodthingsgolf.netlify.app/",
     title: "Good Things Golf",
     description: "A masonry golf photo gallery",
+    type: "Photos",
     className: "goodthingsgolf",
   },
   {
@@ -40,6 +44,7 @@ const projectList = [
     link: "https://open.spotify.com/playlist/5YgbIoNbuNGPTyThjHZPSY?si=663313e0302948f5",
     title: "Zen",
     description: "A lofi playlist for flow state",
+    type: "Playlist",
     className: "zen",
   },
   {
@@ -47,6 +52,7 @@ const projectList = [
     link: "https://open.spotify.com/playlist/4uH2mfivSNIZeHXrndnzjx?si=d3d8f474ed874360",
     title: "Fuel",
     description: "An uptempo playlist to get hyped up",
+    type: "Playlist",
     className: "fuel",
   },
   {
@@ -54,6 +60,7 @@ const projectList = [
     link: "https://www.youtube.com/watch?v=HEabNO4aqWM",
     title: "Decemburrr",
     description: "A video of the white room (snowboarding)",
+    type: "Video",
     className: "decemburrr",
   },
 ];
