@@ -9,27 +9,22 @@
 Make sure you have the following installed:
 ```
 Node.js >= 16
-npm or yarn
 ```
 Install once the repository is cloned locally:
 ```
 npm install
-# or
-yarn
 ```
 Run locally:
 ```
 npm run dev
-# or
-yarn dev
 ```
 The app will be available at: [http://localhost:5173/](http://localhost:5173/)
 
-## 🧩 Folder Structure
+## 📁 Folder Structure
 
 ```
 src/
-├── assets/
+├── assets/                  # Project icons
 │   ├── golf.svg
 │   ├── growth.svg
 │   ├── mountain.svg
@@ -41,16 +36,16 @@ src/
 │   ├── Footer.tsx
 │   ├── Header.tsx
 │   ├── Project.tsx
-│   ├── ProjectsList.tsx
-│   └── projectList.ts
-├── partials/
+│   ├── ProjectsList.tsx     # Project JSX
+│   └── projectList.ts       # Project data JSON
+├── partials/                # All components have their individual partials
 │   ├── _footer.scss
-│   ├── _global.scss
+│   ├── _global.scss         # Applies across all components
 │   ├── _header.scss
 │   ├── _project.scss
-│   ├── _setup.scss
+│   ├── _setup.scss         # For browser consistency
 │   └── _variables.scss
-├── App.tsx
-├── index.scss
+├── App.tsx                 # Landing page
+├── index.scss              # All Sass partial imports
 └── main.tsx
 ```
