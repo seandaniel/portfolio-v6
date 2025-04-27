@@ -43,9 +43,9 @@ src/
 │   ├── _global.scss         # Applies across all components
 │   ├── _header.scss
 │   ├── _project.scss
-│   ├── _setup.scss         # For browser consistency
+│   ├── _setup.scss          # For browser consistency
 │   └── _variables.scss
-├── App.tsx                 # Landing page
-├── index.scss              # All Sass partial imports
+├── App.tsx                  # Landing page
+├── index.scss               # All Sass partial imports
 └── main.tsx
 ```
