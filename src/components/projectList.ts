@@ -25,7 +25,7 @@ const projectList = [
     icon: notesIcon,
     link: "https://webapp-notes.netlify.app/",
     title: "Notes",
-    description: "Jot down lists, to-dos, lyrics, code, birthdays",
+    description: "Jot down lists, to-dos, lyrics, birthdays to remember",
     type: "App",
     className: "notes",
   },
