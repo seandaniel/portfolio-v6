@@ -2,7 +2,7 @@
 
 .projects-container .fade-in {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 2% 1%;
   width: 100%;
@@ -90,14 +90,6 @@
   background-color: #afe8ec;
 }
 
-.zen {
-  background-color: #ead6ac;
-}
-
-.fuel {
-  background-color: #e7b6b6;
-}
-
-.decemburrr {
-  background-color: #ecc2f1;
+.gitcheck {
+  background-color: #929b9b;
 }

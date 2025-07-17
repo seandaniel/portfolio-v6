@@ -5,13 +5,7 @@ export const Header = () => {
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const phrases = [
-    "Web Developer",
-    "Snowboarder",
-    "Golfer",
-    "Great w/ the aux cord",
-    "Open for work",
-  ];
+  const phrases = ["Web Developer", "Snowboarder", "Golfer", "Open for work"];
   const typingSpeed = 200;
   const backspaceSpeed = 100;
   const pauseTime = 1000;
