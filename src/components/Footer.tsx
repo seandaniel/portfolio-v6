@@ -13,11 +13,6 @@ export const Footer = () => {
             <h4>Connect</h4>
             <ul className="connect-ul">
               <li>
-                <a target="_blank" href="https://www.instagram.com/grootsy">
-                  Instagram
-                </a>
-              </li>
-              <li>
                 <a
                   target="_blank"
                   href="https://open.spotify.com/user/223qiiof6fhdany67yewp3a3i?si=42ec0afced384a01"

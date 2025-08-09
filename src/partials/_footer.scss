@@ -49,6 +49,9 @@ footer {
           color: $tertiaryColor;
         }
       }
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
   }
 }
